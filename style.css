@@ -1,0 +1,114 @@
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("assets/img/static.png");
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+
+  color: #424242;
+
+  margin-top: 0;
+}
+
+.main-text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 32px;
+  gap: 32px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.main-container a {
+  font-weight: 700;
+  color: #424242;
+}
+
+.logo-container svg {
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 120px 236px;
+    gap: 10px;
+
+    max-width: 808px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .main-container .header {
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 0.02em;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .main-container .main-text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .logo-container svg {
+    width: 348px;
+  }
+}
